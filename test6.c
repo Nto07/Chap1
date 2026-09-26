@@ -3,6 +3,8 @@
 int main()
 {	
 	int a;
+	
+	
 	printf("Saisir un entier : ");
 	scanf("%d", &a);
 	printf("votre entier est : %d\n", a);
