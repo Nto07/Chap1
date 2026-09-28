@@ -2,26 +2,24 @@
 
 int main() 
 {
-
 	char ch;
-	do
+	printf("Saisir une lettre :");	
+	
+	scanf("%c", &ch);
+	
+	if(ch >= 'a' && ch <= 'z')
 	{
-		printf("Entrer un caractere : ");
-		scanf("%c", &ch);
-		getchar();
+		printf("En majuscule : %c\n", ch - 32);
 	}
-	while(ch  == '!' || ch == '#' || ch == '.' || ch == '?' || ch == '$' || ch == '*' || ch == '&' || ch == '@');
 	
-	printf("%c\n", ch);
+	if(ch >= 'A' && ch <= 'Z')
+	{
+		printf("En minuscule : %c\n", ch + 32);
+	}
 
-	// if(ch >= 'a' && ch <= 'z')
-	// {
-	// 	printf("En majuscule : %c\n", ch - 32);
-	// }
-	
-	// if(ch >= 'A' && ch <= 'Z')
-	// {
-	// 	printf("En minuscule : %c\n", ch + 32);
-	// }  
+	if(ch  == '!' || ch == '#' || ch == '.' || ch == '?' || ch == '$' || ch == '*' || ch == '&' || ch == '@')
+	{
+		printf("Erreur !\n");
+	}    
 
 }
